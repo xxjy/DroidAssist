@@ -39,6 +39,7 @@ apply plugin: 'com.didichuxing.tools.droidassist'
 droidAssistOptions {
     enable true
     logLevel 3
-    config file("droidassist.xml")
+//    config file("droidassist.xml")
+    config file("droidassist_annotation.xml")
     logDir file("${project.buildDir.absolutePath}/logs")
 }

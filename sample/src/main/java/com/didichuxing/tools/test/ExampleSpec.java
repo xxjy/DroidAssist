@@ -9,6 +9,7 @@ public final class ExampleSpec implements IInterface {
 
     public static ExampleSpec instance = new ExampleSpec();
 
+    @TestAnnotation(stringValue = "constructor")
     public ExampleSpec() {
         System.out.println("<init>");
     }
@@ -29,6 +30,7 @@ public final class ExampleSpec implements IInterface {
         return instance;
     }
 
+//    @TestAnnotation()
     public void run() {
         System.out.println("run");
     }
